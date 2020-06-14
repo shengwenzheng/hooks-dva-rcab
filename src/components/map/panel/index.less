@@ -1,0 +1,190 @@
+.container {
+  .layerVisibility {
+    width: 106px;
+    height: 34px;
+    line-height: 34px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    text-indent: 8px;
+    font-weight: 400;
+    color: rgba(85, 85, 85, 1);
+    display: inline-block;
+
+    span {
+      display: inline-block;
+      width: 36px;
+      height: 34px;
+      margin-left: 14px;
+    }
+
+    img {
+      width: 26px;
+      height: 26px;
+    }
+  }
+  .videoLayer {
+    width: 105px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 45px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 1);
+    padding: 6px 0 0 6px;
+    opacity: 0;
+    input {
+      box-sizing: border-box;
+      padding: 0;
+    }
+    span {
+      padding: 6px 10px 6px 6px;
+      color: #333;
+      background: #fff;
+    }
+  }
+  .circleSelect {
+    width: 60px;
+    height: 34px;
+    line-height: 34px;
+    position: absolute;
+    right: 130px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    text-indent: 8px;
+    font-weight: 400;
+    color: rgba(85, 85, 85, 1);
+    display: inline-block;
+
+    span {
+      display: inline-block;
+      width: 20px;
+      height: 34px;
+      margin-left: 0px;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .polygonSelect {
+    width: 60px;
+    height: 34px;
+    line-height: 34px;
+    position: absolute;
+    right: 205px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    text-indent: 8px;
+    font-weight: 400;
+    color: rgba(85, 85, 85, 1);
+    display: inline-block;
+
+    span {
+      display: inline-block;
+      width: 20px;
+      height: 34px;
+      margin-left: 0px;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .rectTip {
+    color: #555555;
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 34px;
+      background: #999999;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+      vertical-align: bottom;
+      margin-left: -12px;
+      margin-right: 6px;
+    }
+  }
+  .checkedRectTip {
+    color: #2950b8;
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 34px;
+      background: #2950b8;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+      vertical-align: bottom;
+      margin-left: -12px;
+      margin-right: 6px;
+    }
+  }
+
+  .totalPoliceNum {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 280px;
+    top: 10px;
+    width: 140px;
+    height: 34px;
+    background: rgba(17, 39, 80, 1);
+    opacity: 0.69;
+    //font-size:21px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 34px;
+    z-index: 1000;
+    span {
+      //width:68px;
+      height: 34px;
+      font-size: 18px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 1);
+      line-height: 34px;
+    }
+  }
+
+  .zoom {
+    width: 106px;
+    height: 34px;
+    line-height: 34px;
+    position: absolute;
+    right: 34px;
+    bottom: 24px;
+    display: flex;
+    z-index: 9999;
+    text-indent: 8px;
+    font-weight: 400;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+
+    img {
+      display: block;
+      flex: 1;
+      width: 34px;
+      height: 34px;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+      margin: 0 2px 0 2px;
+    }
+  }
+}

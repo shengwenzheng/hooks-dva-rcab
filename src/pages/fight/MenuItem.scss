@@ -1,0 +1,37 @@
+.menuItemContainer {
+  position: relative;
+  border-bottom: 1px solid #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+  background-color: #fff;
+  font-size: 15px;
+  color: #666;
+  cursor: pointer;
+  img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 6px;
+  }
+  span {
+    writing-mode: vertical-lr;
+    letter-spacing: 4px;
+    span {
+      writing-mode: horizontal-tb;
+      letter-spacing: 0;
+    }
+  }
+  div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    background-color: #2950b8;
+  }
+}
+.active {
+  color: #2950b8;
+}

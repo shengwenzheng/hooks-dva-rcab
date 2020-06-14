@@ -1,0 +1,64 @@
+.areaDeployContainer {
+  width: 320px;
+  max-height: 700px;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  flex: none;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  border-bottom: 1px solid #d8d8d8;
+  font-size: 20px;
+  color: #373d41;
+  display: flex;
+  align-items: center;
+  span:nth-of-type(1) {
+    font-size: 20px;
+    font-weight: 400;
+    color: #666;
+  }
+  .closeIcon {
+    margin-left: auto;
+  }
+  .editIcon {
+    color: #2950b8;
+  }
+}
+.content {
+  flex: 1;
+  overflow: auto;
+  padding: 15px 20px;
+}
+.title {
+  font-size: 22px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tag {
+  margin: 6px 0;
+}
+.text {
+  font-size: 16px;
+  color: #333;
+  margin: 6px 0;
+}
+.keyPriod {
+  font-size: 16px;
+  color: #333;
+  margin: 6px 0;
+  display: flex;
+}
+.editIcon {
+  color: #2950b8;
+  cursor: pointer;
+}

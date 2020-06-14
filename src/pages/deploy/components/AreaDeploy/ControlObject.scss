@@ -1,0 +1,24 @@
+.controlObjectContainer {
+  padding: 8px;
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .editIcon {
+    color: #2950b8;
+    cursor: pointer;
+  }
+  :global {
+    .ant-checkbox-group {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.footer {
+  text-align: right;
+}
+.cancleButton {
+  margin-right: 8px;
+}

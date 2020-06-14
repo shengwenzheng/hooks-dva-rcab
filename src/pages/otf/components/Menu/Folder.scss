@@ -1,0 +1,36 @@
+.folderContainer {
+  height: 40px;
+  background-color: #e9edf9;
+  border: 1px solid #999;
+  display: flex;
+  align-items: center;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    border-color: #2950b8;
+  }
+  .status {
+    width: 4px;
+    height: 100%;
+    background: #999;
+  }
+  img {
+    width: 20px;
+    height: 18px;
+    margin: 0 8px;
+  }
+  .name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .total {
+    margin-right: 12px;
+    flex: 0 0 auto;
+  }
+  // .right {
+  //   flex-shrink: 0;
+  //   margin-right: 12px;
+  // }
+}

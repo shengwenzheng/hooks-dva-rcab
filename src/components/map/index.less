@@ -1,0 +1,573 @@
+.mapContainer {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  left: 0 * 100px;
+  top: 0 * 100px;
+  transform: scale(1);
+  box-shadow: 0px 0px 20px #fff inset;
+  :global {
+    .custom-tooltip {
+      padding: 0 * 100px;
+      box-shadow: 0 0 * 100px 0 * 100px;
+      margin-top: 0 * 100px;
+      border: 0 * 100px;
+      width: 0.525 * 100px;
+      height: 0.7 * 100px;
+      text-align: center !important;
+      line-height: 0.5 * 100px;
+      left: 0 * 100px;
+      top: 0.2 * 100px;
+      background: url('../../assets/images/map/track-border.png');
+      background-repeat: no-repeat !important;
+      span {
+        font-size: 0.2 * 100px;
+        font-family: Microsoft YaHei;
+        color: #2950b8;
+        font-weight: bold;
+      }
+    }
+    .custom-tooltip:before {
+      bottom: 0;
+      margin-bottom: 0 * 100px;
+      border-top-color: transparent;
+    }
+
+    .custom-tooltip-1 {
+      padding: 0 * 100px;
+      box-shadow: 0 0 * 100px 0 * 100px;
+      margin-top: 0 * 100px;
+      border: 0 * 100px;
+      width: 0.18 * 100px;
+      height: 0.18 * 100px;
+      text-align: center !important;
+      line-height: 0.18 * 100px;
+      background: url('../../assets/images/map/track-border.png');
+      left: -0.13 * 100px;
+      top: 0.2 * 100px;
+      transform: scale(0.75);
+      span {
+        font-size: 0.12 * 100px;
+        font-family: Microsoft YaHei;
+        color: white;
+      }
+    }
+
+    .custom-tooltip-1:before {
+      bottom: 0;
+      margin-bottom: 0 * 100px;
+      border-top-color: transparent;
+    }
+    .custom-tooltip-2 {
+      padding: 0 * 100px;
+      box-shadow: 0 0 * 100px 0 * 100px;
+      margin-top: 0 * 100px;
+      border: 0 * 100px;
+      width: 0.525 * 100px;
+      height: 0.7 * 100px;
+      text-align: center !important;
+      line-height: 0.18 * 100px;
+      left: 0 * 100px;
+      top: 0.2 * 100px;
+      display: flex;
+      background: url('../../assets/images/map/track-border.png');
+      background-repeat: no-repeat !important;
+      span {
+        position: relative;
+        top: 0.15 * 100px;
+        left: 0.05 * 100px;
+        width: 0.2 * 100px;
+        height: 0.2 * 100px;
+        font-size: 0.12 * 100px;
+        font-family: Microsoft YaHei;
+        color: #2950b8;
+        font-weight: bold;
+      }
+    }
+
+    .custom-tooltip-2:before {
+      bottom: 0;
+      margin-bottom: 0 * 100px;
+      border-top-color: transparent;
+    }
+    .custom-tooltip-3 {
+      padding: 0 * 100px;
+      box-shadow: 0 0 * 100px 0 * 100px;
+      margin-top: 0 * 100px;
+      border: 0 * 100px;
+      width: 0.67 * 100px;
+      height: 0.92 * 100px;
+      text-align: center !important;
+      line-height: 0.18 * 100px;
+      left: 0 * 100px;
+      top: 0.2 * 100px;
+      display: flex;
+      justify-content: center;
+      background: url('../../assets/images/map/track-border-big.png');
+      background-repeat: no-repeat !important;
+      span {
+        display: block;
+        width: 0.21 * 100px;
+        height: 0.21 * 100px;
+        font-size: 0.06 * 100px;
+        font-family: MicrosoftYaHei;
+        font-weight: bold;
+        color: rgba(41, 80, 184, 1);
+        line-height: 8px;
+      }
+    }
+
+    .custom-tooltip-3:before {
+      bottom: 0;
+      margin-bottom: 0 * 100px;
+      border-top-color: transparent;
+    }
+    .custom-tooltip-4 {
+      padding: 0 * 100px;
+      box-shadow: 0 0 * 100px 0 * 100px;
+      margin-top: 0 * 100px;
+      border: 0 * 100px;
+      width: 0.54 * 100px;
+      height: 0.36 * 100px;
+      text-align: center !important;
+      line-height: 0.18 * 100px;
+      left: 0 * 100px;
+      top: 0.45 * 100px;
+      display: flex;
+      flex-wrap: wrap;
+      background: url('../../assets/images/map/track-border.png');
+      background-repeat: no-repeat !important;
+      span {
+        display: block;
+        width: 0.18 * 100px;
+        height: 0.18 * 100px;
+        font-size: 0.12 * 100px;
+        font-family: Arail-BoldMT;
+        color: white;
+        flex-basis: 33%;
+      }
+    }
+
+    .custom-tooltip-4:before {
+      bottom: 0;
+      margin-bottom: 0 * 100px;
+      border-top-color: transparent;
+    }
+    .custom-tooltip-5 {
+      padding: 0 * 100px;
+      box-shadow: 0 0 * 100px 0 * 100px;
+      margin-top: 0 * 100px;
+      border: 0 * 100px;
+      width: 0.54 * 100px;
+      height: 0.36 * 100px;
+      text-align: center !important;
+      line-height: 0.18 * 100px;
+      left: -0.25 * 100px;
+      top: 0.45 * 100px;
+      display: flex;
+      background-color: rgba(0, 0, 0, 0);
+      flex-wrap: wrap;
+      span {
+        display: block;
+        width: 0.18 * 100px;
+        height: 0.18 * 100px;
+        font-size: 0.12 * 100px;
+        font-family: Arail-BoldMT;
+        color: white;
+        background: url('../../assets/images/map/track-border.png');
+        flex-basis: 33%;
+      }
+    }
+
+    .custom-tooltip-5:before {
+      bottom: 0;
+      margin-bottom: 0 * 100px;
+      border-top-color: transparent;
+    }
+
+    .custom-tooltip-6 {
+      padding: 0 * 100px;
+      box-shadow: 0 0 * 100px 0 * 100px;
+      margin-top: 0 * 100px;
+      border: 0 * 100px;
+      width: 0.54 * 100px;
+      height: 0.36 * 100px;
+      text-align: center !important;
+      line-height: 0.18 * 100px;
+      left: -0.25 * 100px;
+      top: 0.45 * 100px;
+      display: flex;
+      background-color: rgba(0, 0, 0, 0);
+      flex-wrap: wrap;
+      span {
+        display: block;
+        width: 0.18 * 100px;
+        height: 0.18 * 100px;
+        font-size: 0.12 * 100px;
+        font-family: Arail-BoldMT;
+        color: white;
+        background: url('../../assets/images/map/track-border.png');
+        flex-basis: 33%;
+      }
+    }
+
+    .custom-tooltip-6:before {
+      bottom: 0;
+      margin-bottom: 0 * 100px;
+      border-top-color: transparent;
+    }
+
+    .path-content {
+      width: 0.42 * 100px;
+      height: 0.35 * 100px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0.18 * 100px 0.07 * 100px 0 0.07 * 100px;
+    }
+
+    .video-popup {
+      width: 538px;
+      height: 305px;
+      bottom: 0.2 * 100px !important;
+      left: -2.8 * 100px !important;
+      .leaflet-popup-content-wrapper {
+        padding: 0.14 * 100px 0 * 100px 0.04 * 100px 0 * 100px;
+      }
+
+      .title {
+        font-size: 0.16 * 100px;
+        color: #373d41;
+        margin-left: 0.08 * 100px;
+        position: relative;
+        top: -0.12 * 100px;
+      }
+      .leaflet-popup-close-button {
+        position: absolute;
+        top: 0.13 * 100px;
+        right: 0.16 * 100px;
+        padding: 0.04 * 100px 0.04 * 100px 0 0;
+        border: none;
+        text-align: center;
+        width: 0.18 * 100px;
+        height: 0.14 * 100px;
+        font: 0.16 * 100px/0.14 * 100px Tahoma, Verdana, sans-serif;
+        color: #c3c3c3;
+        text-decoration: none;
+        font-weight: 100;
+        font-size: 0.18 * 100px;
+        background: transparent;
+      }
+    }
+
+    .marker-cluster-custom {
+      text-align: center !important;
+      line-height: 0.32 * 100px;
+      background: url('../../assets/images/map/cluster.png');
+      span {
+        //left: 6px;
+        //position: absolute;
+        //top: 5px;
+        font-size: 0.14 * 100px;
+        font-family: Helvetica-Bold;
+        font-weight: bold;
+        color: #2979ff;
+      }
+    }
+
+    .marker-cluster-custom-12 {
+      text-align: center !important;
+      line-height: 0.28 * 100px;
+      position: relative;
+      background: url('../../assets/images/map/cluster.png');
+      span {
+        //left: 6px;
+        //position: absolute;
+        //top: 5px;
+        font-size: 0.11 * 100px;
+        font-family: Helvetica-Bold;
+        //font-weight:bold;
+        color: #2979ff;
+      }
+      div {
+        position: absolute;
+        bottom: -0.04 * 100px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .marker-cluster-video {
+      text-align: center !important;
+      line-height: 0.22 * 100px;
+      background: url('../../assets/images/map/cluster-video.png');
+      span {
+        color: #2979ff;
+        //width:.12*100px;
+        //height:.08*100px;
+        font-size: 0.06 * 100px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: rgba(136, 136, 136, 1);
+        //line-height: .08*100px;
+        padding-left: 0.26 * 100px;
+      }
+    }
+
+    .marker-cluster-faceITC {
+      text-align: center !important;
+      line-height: 0.22 * 100px;
+      background: url('../../assets/images/map/cluster-face.png');
+      span {
+        color: #2979ff;
+        //width:.12*100px;
+        //height:.08*100px;
+        font-size: 0.06 * 100px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: rgba(136, 136, 136, 1);
+        //line-height: .08*100px;
+        padding-left: 0.26 * 100px;
+      }
+    }
+
+    .marker-cluster-carITC {
+      text-align: center !important;
+      line-height: 0.22 * 100px;
+      background: url('../../assets/images/map/cluster-car.png');
+      span {
+        color: #2979ff;
+        //width:.12*100px;
+        //height:.08*100px;
+        font-size: 0.06 * 100px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: rgba(136, 136, 136, 1);
+        //line-height: .08*100px;
+        padding-left: 0.26 * 100px;
+      }
+    }
+
+    .radar-circle-div {
+      width: 0.01 * 100px;
+      height: 0.01 * 100px;
+    }
+
+    .customPopup {
+      .main {
+        width: 2.5 * 100px;
+        height: 1.6 * 100px;
+      }
+      .popupImg {
+        width: 0.8 * 100px;
+        height: 1.6 * 100px;
+        float: left;
+      }
+      .content {
+        height: 100%;
+        float: left;
+      }
+
+      .popupButton {
+        width: 1.5 * 100px;
+        position: absolute;
+        bottom: 0.18 * 100px;
+        padding: 0.05 * 100px;
+      }
+    }
+
+    .track-move-men {
+      border: 0px;
+      background: none;
+      width: 0.12 * 100px;
+      height: 0.19 * 100px;
+    }
+
+    .leaflet-pulsing-icon {
+      z-index: -7;
+      border-radius: 100%;
+      box-shadow: 1px 1px 8px 0 rgba(255, 40, 138, 0) inset;
+    }
+
+    .leaflet-pulsing-icon:after {
+      content: '';
+      border-radius: 100%;
+      height: 300%;
+      width: 300%;
+      position: absolute;
+      margin: -100% 0 0 -100%;
+      z-index: -7;
+    }
+
+    .vjs-error .vjs-error-display:before {
+      content: '';
+    }
+
+    .leaflet-markers0-pane,
+    .leaflet-markers1-pane,
+    .leaflet-markers2-pane {
+      width: 1.9 * 100px;
+    }
+
+    .poiContent div {
+      margin: 5px 0 5px 0;
+    }
+
+    .leaflet-control-layers {
+      //margin-top: 63px !important;
+      width: 105px;
+      border-radius: 0px;
+      opacity: 0;
+    }
+
+    .preventCircle {
+      width: 115px;
+      height: 20px;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+      .preventCircle-btn {
+        width: 54px;
+        height: 20px;
+        background: rgba(255, 30, 0, 1);
+        border-radius: 5px;
+        padding: 5px 5px 5px 5px;
+        cursor: pointer;
+        margin-left: -13px;
+        display: none;
+      }
+    }
+
+    .preventCircle-polygon {
+      width: 126px;
+      height: 20px;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+      .preventCircle-polygon-btn {
+        width: 54px;
+        height: 20px;
+        background: rgba(255, 30, 0, 1);
+        border-radius: 5px;
+        padding: 5px 5px 5px 5px;
+        cursor: pointer;
+        margin-left: 0px;
+      }
+    }
+
+    .deleteMarkeImgClass {
+      position: relative;
+      top: 67px;
+      right: 2px;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    .preventCircle-save {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      width: 63px;
+      height: 33px;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+      line-height: 26px;
+      text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      margin-left: 34px !important;
+    }
+    .checkPoint-save {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      width: 63px;
+      height: 33px;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+      line-height: 26px;
+      text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      margin-left: 18px !important;
+    }
+  }
+  .legend {
+    width: 1.78 * 100px;
+    height: 1.21 * 100px;
+    background: url('../../assets/images/map/legend-b@1x.png') no-repeat center;
+    background-size: 1.78 * 100px 1.21 * 100px;
+    z-index: 9999;
+    position: absolute;
+    bottom: 0.32 * 100px;
+    right: 3.46 * 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.14 * 100px 0.2 * 100px;
+    div {
+      margin: 0 auto;
+      height: 0.24 * 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      div {
+        width: 0.4 * 100px;
+        height: 0.16 * 100px;
+        span {
+          text-align: center;
+          margin-left: 0.2 * 100px;
+          display: inline-block;
+          height: 0.2 * 100px;
+          line-height: 0.2 * 100px;
+          font-size: 0.12 * 100px;
+        }
+      }
+      p {
+        font-size: 0.12 * 100px;
+        font-family: PingFangSC;
+        font-weight: 400;
+        width: 0.9 * 100px;
+        color: rgba(58, 58, 58, 1);
+      }
+      .cluster {
+        background: url('../../assets/images/map/legend-video.png') no-repeat center;
+      }
+      .video {
+        background: url('../../assets/images/map/编组 3备份@2x.png') no-repeat center;
+      }
+      .face {
+        background: url('../../assets/images/map/编组 3备份 2@2x.png') no-repeat center;
+      }
+      .bayonet {
+        background: url('../../assets/images/map/编组 3@2x.png') no-repeat center;
+      }
+    }
+    :global {
+      .ant-checkbox-wrapper {
+        font-size: 0.12 * 100px;
+      }
+      .ant-checkbox {
+        font-size: 0.12 * 100px;
+      }
+      .ant-checkbox-inner {
+        width: 14px;
+        height: 14px;
+      }
+      .ant-checkbox-inner::after {
+        position: absolute;
+        top: 50%;
+        left: 17%;
+      }
+    }
+  }
+}

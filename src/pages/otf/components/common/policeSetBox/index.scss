@@ -1,0 +1,27 @@
+.policeSetBox{
+  .edit{
+    display: flex;
+    justify-content: space-between;
+    img{
+      width: 21px;
+      height: 21px;
+      cursor: pointer;
+    }
+  }
+  .inputEdit{
+    div:first-child{
+      margin: 10px 0;
+      display: flex;
+      input{
+        width: 50px;
+        margin: 0 5px;
+      }
+    }
+    div:last-child{
+      text-align: center;
+      button{
+        margin-right: 10px;
+      }
+    }
+  }
+}

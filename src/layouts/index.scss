@@ -1,0 +1,9 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .main {
+    overflow: hidden;
+    flex: 1;
+  }
+}

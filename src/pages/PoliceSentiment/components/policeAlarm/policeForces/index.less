@@ -1,0 +1,48 @@
+.box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+.policeBox{
+    flex-grow: 1;
+    padding:0 12px;
+    border:1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .count{
+        height: 36px;
+        line-height: 36px;
+    }
+    .checkAll{
+        height: 36px;
+        line-height: 36px;
+    }
+    .checkboxList{
+        flex-grow: 1;
+        overflow: auto;
+    }
+}
+.submitPolice{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    :global{
+        .ant-btn{
+            padding: 0 5px;
+            width: 70px;
+            border-radius: 5px;
+        }
+        .ant-btn:active, .ant-btn:focus{
+            background: #2950B8;
+            color: #fff;
+        }
+    }      
+}
+.list{
+    display: flex;
+    >div{
+        margin-left: 8px;
+    }
+}
+}
+  

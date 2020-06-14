@@ -1,0 +1,65 @@
+.Step{
+    width: 100%;
+    margin-right:20px;
+    padding:0 20px;
+    position: relative;
+    >div{
+        display: flex;
+        justify-content: space-between; 
+    }
+    .text{
+        width: 100%;
+        height:15px;
+        position: relative;
+        >div{
+            position: absolute;
+            font-size: 12px;
+            width: 40px;
+        }
+        .bgCurretn{
+            color: #2950B8;
+            font-size: 12px;
+        }
+        .bgActive{
+            color: #2950B8;
+        }
+        .bgDefault{
+            color: #999999;
+        }
+    }
+    .line{
+        width: 100%;
+        position: relative;
+        top: -20;
+        left:0;
+        height: 3px;
+        background: #ccc;
+        z-index: 99;
+        .activeLine{
+            height: 3px;
+            background: #2950B8;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+        .stepNum,.stepNum1, .stepNum0{
+            width: 10px;
+            height:10px;
+            border-radius: 50%;
+            margin-right: 10px;
+            border:1px solid #979797;
+            background: #fff;
+            position: absolute;
+            top: -3px;
+            z-index: 101;
+        }
+        .stepNum0{
+            border:1px solid #2950B8;
+            box-shadow: 0 0 0 2px  #8CABFF;
+        }
+        .stepNum1{
+            border:1px solid #2950B8;
+        }
+    }
+}

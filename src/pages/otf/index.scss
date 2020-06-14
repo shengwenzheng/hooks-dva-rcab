@@ -1,0 +1,30 @@
+.otfContainer {
+  height: 100%;
+  .blockSty{
+    height: calc(100% - 49px);
+    position: absolute;
+    background: #fff;
+    display: flex;
+    top:48px;
+    z-index: 2;
+    box-shadow: 7px 0 7px rgba(0,0,0, 0.3);
+    & > div{
+      padding-top: 0;
+      border-left: 1px solid #999;
+      border-right: none;
+    }
+  }
+  .modalOutBox {
+    position: absolute;
+    left: 372px;
+    top: 60px;
+  }
+  .policedetailOutBox{
+    position: absolute;
+    width: 316px;
+    top: 60px;
+    left: 372px;
+    bottom: 24px;
+    z-index: 6667;
+  }
+}

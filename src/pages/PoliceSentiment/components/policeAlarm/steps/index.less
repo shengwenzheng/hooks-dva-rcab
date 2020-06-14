@@ -1,0 +1,41 @@
+.box {
+    display: flex;
+    height: 400px;
+    .right {
+      margin: 8px 15px 0 15px;
+      >div {
+        display: flex;
+        align-items: flex-end;
+        height:20%;
+        margin-right: 8px;
+        padding-bottom: 4px;
+        b {
+          font-weight: normal;
+        }
+      }
+    }
+    :global{
+        .ant-steps {
+            transform: rotate(180deg);
+          }
+          .ant-steps-item {
+            height:20%;
+            .ant-steps-item-content {
+              transform: rotate(-180deg);
+              position: absolute;
+              right: 25px;
+              .ant-steps-item-description {
+                padding:0;
+              }
+            }
+          }
+          .ant-steps-item-process {
+            .ant-steps-item-content {
+              .ant-steps-item-title {
+                color:blue
+              }
+            }
+          }
+    }
+  }
+  

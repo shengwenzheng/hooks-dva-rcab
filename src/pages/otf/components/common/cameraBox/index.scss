@@ -1,0 +1,22 @@
+.cameraBox{
+ max-height: 260px;
+ overflow: auto;
+ &>div{
+   position: absolute;
+   width: 60%;
+   background: #fff;
+ }
+ ul{
+   margin: 20px 0 10px;
+   li{
+     margin-bottom: 5px;
+     color: #333;
+     cursor: pointer;
+     img{
+       width: 34px * 0.6;
+       height: 22px * 0.6;
+       margin-right: 5px;
+     }
+   }
+ }
+}

@@ -1,0 +1,71 @@
+.controlBox{
+  border: 1px solid #f1f1f1;
+  .header{
+    padding: 5px 10px 0;
+    display: flex;
+    justify-content: space-between;
+    img{
+      width: 23px;
+      height: 23px;
+      cursor: pointer;
+    }
+  }
+  ul {
+    padding: 10px;
+    li{
+      margin-bottom: 5px;
+    }
+  }
+  .checkBoxSty{
+    padding: 10px;
+    position: relative;
+    max-height: 200px;
+    overflow: auto;
+    .checkboxList{
+      margin-bottom: 30px;
+      label{
+        display: block;
+      }
+    }
+    .checkAll{
+      position: absolute;
+      width: 93%;
+      bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .footer{
+    border-top: 1px solid #f1f1f1;
+    .edit{
+      display: flex;
+      & > div{
+        white-space: nowrap;
+        label{
+          margin-right: 5px;
+          span{
+            padding: 0 2px;
+          }
+        }
+      }
+      & > span{
+        white-space: nowrap;
+        margin-right: 3px;
+      }
+    }
+    .editNormal{
+      padding: 10px;
+      color: #2950b8;
+    }
+    .editActive{
+      padding: 10px;
+      .submitBtns{
+        text-align: right;
+        padding: 10px 0;
+        button{
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

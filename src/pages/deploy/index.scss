@@ -1,0 +1,8 @@
+.deployContainer {
+  height: 100%;
+  display: flex;
+  .right {
+    position: relative;
+    flex: 1;
+  }
+}
